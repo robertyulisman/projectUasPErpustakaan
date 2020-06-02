@@ -71,7 +71,7 @@ export default class App extends React.Component {
             translateY
         } = this.state;
         return (
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, backgroundColor: '#f5f6fa', }}>
                 <View
                     style={{
                         width: "90%",
@@ -132,7 +132,7 @@ export default class App extends React.Component {
                                     color: active === 0 ? "#fff" : "#007aff"
                                 }}
                             >
-                                Kelompok
+                                Aplikasi perpustakaan
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -163,7 +163,7 @@ export default class App extends React.Component {
                                     color: active === 1 ? "#fff" : "#007aff"
                                 }}
                             >
-                                About
+                                Versi Aplikasi
                             </Text>
                         </TouchableOpacity>
                     </View>
@@ -187,7 +187,7 @@ export default class App extends React.Component {
                         >
                             
                             <View style={{ marginTop: 20 }}>
-                             <Text>Hello</Text>  
+                             <Text style={{textAlign: 'justify'}}>Aplikasi Perpustakaan merupakan aplikasi yang sangat dibutuhkan oleh sebuah perpustakaan untuk dapat mengelola data peminjaman dan pengembalian yang terjadi di dalam Perpustakaan seperti pencatatan data anggota, pencatatan data buku, pencatatan data peminjaman dan pengembalian buku, catatan data denda, dan pembuatan data laporan. Suatu sistem dapat dikatakan baik apabila memudahkan semua proses, salah satunya dengan membuat aplikasi pengolahan data terkomputerisasi, pemakaian komputer sebagai alat pengolah data perpustakaan dapat dikatakan yang terbaik untuk saat ini, karena dapat meningkatkan kecepatan pekerjaan sehingga dicapai efisiensi tenaga dan waktu dalam mengolah data.</Text>  
                             </View>
                         </Animated.View>
 
@@ -207,7 +207,7 @@ export default class App extends React.Component {
                         >
                             
                             <View style={{ marginTop: 20 }}>
-                            
+                                <Text>Versi 1.0</Text>  
                             </View>
                         </Animated.View>
                     </ScrollView>

@@ -197,6 +197,21 @@ const SiswaScreen = ({ navigation }) => {
                             </View>
                         </TouchableOpacity>
                     ),
+                    headerRight: () => (
+                        <TouchableOpacity
+                            onPress={() => {
+                            navigation.navigate('AddSiswa');
+                        }}
+                        >
+                            <View>
+                                <Feather
+                                    name="plus"
+                                    size={35}
+                                    style={{ color: colors.text }}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                    ),
                 }}
             />
             <RootStack.Screen
@@ -238,6 +253,21 @@ const BukuScreen = ({ navigation }) => {
                             <View>
                                 <Feather
                                     name="menu"
+                                    size={35}
+                                    style={{ color: colors.text }}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                    ),
+                    headerRight: () => (
+                        <TouchableOpacity
+                            onPress={() => {
+                            navigation.navigate('AddBuku');
+                        }}
+                        >
+                            <View>
+                                <Feather
+                                    name="plus"
                                     size={35}
                                     style={{ color: colors.text }}
                                 />
@@ -291,6 +321,21 @@ const PeminjamanScreen = ({ navigation }) => {
                             </View>
                         </TouchableOpacity>
                     ),
+                    headerRight: () => (
+                        <TouchableOpacity
+                            onPress={() => {
+                            navigation.navigate('AddPinjam');
+                        }}
+                        >
+                            <View>
+                                <Feather
+                                    name="plus"
+                                    size={35}
+                                    style={{ color: colors.text }}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                    ),
                 }}
             />
             <RootStack.Screen
@@ -332,6 +377,21 @@ const PengembalianScreen = ({ navigation }) => {
                             <View>
                                 <Feather
                                     name="menu"
+                                    size={35}
+                                    style={{ color: colors.text }}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                    ),
+                    headerRight: () => (
+                        <TouchableOpacity
+                            onPress={() => {
+                            navigation.navigate('AddKembali');
+                        }}
+                        >
+                            <View>
+                                <Feather
+                                    name="plus"
                                     size={35}
                                     style={{ color: colors.text }}
                                 />

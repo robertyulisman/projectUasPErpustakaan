@@ -47,16 +47,8 @@ export default class Siswa extends React.Component {
     if (this.state.shouldRender) {
       return (
         <View style={styles.container}>
-          <TouchableOpacity
-            style={styles.icon}
-            onPress={() => {
-              this.props.navigation.navigate('AddPinjam');
-            }}>
-            <View style={styles.iconButton}>
-              <Feather name="plus" style={styles.topIcon} size={35} />
-            </View>
-          </TouchableOpacity>
           <SafeAreaView style={styles.sade}>
+          <View style={styles.sades}>
             <ScrollView>
               {pinjam.length == 0 ? (
                 <Text>Tidak ada data</Text>
@@ -74,6 +66,7 @@ export default class Siswa extends React.Component {
                 ))
               )}
             </ScrollView>
+            </View>
           </SafeAreaView>
         </View>
       );
@@ -117,4 +110,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 12,
   },
+  sades: {
+    marginTop: 20
+}
 });
