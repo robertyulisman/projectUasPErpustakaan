@@ -35,7 +35,7 @@
         "react-native-windows": "0.57.2",
         "react-navigation": "latest",
         "react-navigation-tabs": "latest",
-        "xlsx": "0.16.1"
+        "xlsx": "0.17.0"
     },
     "devDependencies": {
         "babel-preset-expo": "~8.0.0",
